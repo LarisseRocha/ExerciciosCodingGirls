@@ -1,0 +1,6 @@
+Como formatar números decimais
+${total:00.00}
+
+
+Outra forma
+Console.WriteLine($"Você trabalhou {horas} horas e o seu salário é: R$ {(horas * valorDaHora).ToString("F2")}");
