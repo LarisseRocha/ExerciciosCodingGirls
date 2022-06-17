@@ -13,30 +13,35 @@ namespace CalcImc
             string res = Console.ReadLine();
 
             Console.WriteLine("Entre com o primeiro número:");
-            c.num1 = int.Parse(Console.ReadLine());
+            c.num1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Entre com o segundo número:");
-            c.num2 = int.Parse(Console.ReadLine());
+            c.num2 = double.Parse(Console.ReadLine());
 
-            if (res == "1")
+            switch (res)
             {
-                c.multiplicacao();
-                Console.WriteLine($"O resultado é:{c.multiplicacao()}");
-                c.divisao();
-            }
+                case "1":
+                    c.multiplicacao();
+                    Console.WriteLine($"O resultado é:{c.multiplicacao()}");
+                    break;
 
-            else if (res == "2")
-            {
-                c.divisao();
-                Console.WriteLine($"O resultado é:{c.divisao()}");
-                c.divisao();
-            }
+                case "2":
+                    c.divisao();
+                    Console.WriteLine($"O resultado é:{c.divisao()}");
+                    break;
 
-            else if (res == "3")
-            {
-                c.subtracao();
-                Console.WriteLine($"O resultado é:{c.subtracao}");
+                case "3":
+
+                    c.subtracao();
+                    Console.WriteLine($"O resultado é:{c.subtracao}");
+                    break;
+
+                default:
+                    Console.WriteLine("Opcão inválida");
+                    break;
+
             }
+           
         }
     }
 }
