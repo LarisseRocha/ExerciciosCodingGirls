@@ -11,8 +11,8 @@ namespace teste
             //ex1();
             //ex2();
             //ex3();
-            ex4();
-            //ex5();
+            //ex4();
+            ex5();
          
         }
 
@@ -21,18 +21,40 @@ namespace teste
             * menor número de notas e moedas possíveis no qual o valor pode ser decomposto.
             * As notas consideradas são de 100, 50, 20, 10, 5, 2.*/
 
-        /*static void ex1()
+        static void ex1()
         {
             Console.WriteLine("Informe o valor");
             double valor = int.Parse(Console.ReadLine());
 
-            int nota1;
+            int nota100 = 0, nota50 = 0, nota20 = 0, nota10 = 0, nota5 = 0, nota2 = 0;
+            
+            
+                if (valor % 100 == 1)
+                {
+                    nota100++;
+                    Console.WriteLine();
+                }
 
-            if (valor % 100 )
-            {
-                nota1++;
-            }
-        }*/
+                if (valor % 20 == 1)
+                {
+                    nota50++;
+                }
+
+                if (valor % 10 == 1)
+                {
+                    nota10++;
+                }
+
+                if (valor % 5 == 1)
+                {
+                    nota5++;
+                }
+
+                if (valor % 2 == 1)
+                {
+                    nota2++;
+                }
+        }
 
         /*2. Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da
          * mensagem “x é o maior”.*/
@@ -52,12 +74,12 @@ namespace teste
                 Console.WriteLine("O primeiro valor é o maior!");
             }
 
-            if ((valor2 > valor1) && (valor2 > valor3))
+            else if ((valor2 > valor1) && (valor2 > valor3))
             {
                 Console.WriteLine("O segundo valor  é o maior!");
             }
 
-            if ((valor3 > valor1) && (valor3 > valor2))
+            else if ((valor3 > valor1) && (valor3 > valor2))
             {
                 Console.WriteLine("O terceiro valor é o maior!");
             }
@@ -155,7 +177,8 @@ namespace teste
                 
                 Console.WriteLine($"O novo salário é de:{salFinal:00.00}, com reajuste de: {reajuste:00.00} e aumento de: 15%");
             }
-            if ((salario >= 401) && (salario <= 800))
+
+            else if ((salario >= 401) && (salario <= 800))
             {
                 reajuste = (salario * 12) / 100;
                 salFinal = salario + reajuste;
@@ -164,7 +187,7 @@ namespace teste
                 Console.WriteLine($"O novo salário é de:{salFinal:00.00}, com reajuste de: {reajuste:00.00} e aumento de: 12%");
             }
 
-            if ((salario > 800.01) && (salario < 1200))
+            else if ((salario > 800.01) && (salario < 1200))
             {
                 reajuste = (salario * 10) / 100;
                 salFinal = salario + reajuste;
@@ -174,7 +197,7 @@ namespace teste
             }
 
 
-            if ((salario > 1200.01) && (salario < 2000))
+            else if ((salario > 1200.01) && (salario < 2000))
             {
                 reajuste = (salario * 7) / 100;
                 salFinal = salario + reajuste;
@@ -184,7 +207,7 @@ namespace teste
             }
 
 
-            if ((salario > 2000))
+            else if ((salario > 2000))
             {
                 reajuste = (salario * 4) / 100;
                 salFinal = salario + reajuste;

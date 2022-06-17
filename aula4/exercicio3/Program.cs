@@ -13,23 +13,16 @@
         {
             string[] palavras = new string[5];
 
-            string[] vetAux = new string[5];
+            string[] vetAux = { "1", "22", "333", "4444", "55555" };
 
             Console.WriteLine("Digite as palavras:\n");
 
             for (int i = 0; i < 5; i++)
             {
                 palavras[i] = Console.ReadLine();
-                ;
-                Console.WriteLine("\n");
+
 
             }
-
-            for (int i = 0; i < 5; i++)
-            {
-
-                Console.WriteLine(palavras[i].Length);
-                    }
 
 
             Console.ReadLine();
