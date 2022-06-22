@@ -11,35 +11,34 @@ namespace Empregado
 
         public double salario;
 
-        public Empregado()
+        public Empregado(string nome, string cargo, double salario)
         {
-            nome = "";
-            cargo = "";
+            nome = nome;
+            cargo = cargo;
             salario = 0;            
            
         }
 
+        public void salarioNegativo()
+        {
+            if(salario < 0)
+            {
+               Console.WriteLine($"Seu salário é de:{salario = 0.0}");
+            }
+            else
+            {
+                imprimirSalario();
+            }
+            
+        }
 
        public double aumentoDeSalario(double salario)
         {
-            Console.WriteLine("Informe o salario");
-            salario = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Informe o nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Informe o cargo");
-            cargo = Console.ReadLine();
+           
 
             double salarioAumento = 0;
-
-            if (salario < 0)
-            {
-                salarioAumento = 0.0;
-                
-            }
-
-            else if (salario >=  0 && salario < 400.00)
+           
+            if (salario >=  0 && salario < 400.00)
             {
                 salarioAumento = (salario * 0.15) + salario;
             }
@@ -72,5 +71,12 @@ namespace Empregado
 
             return salarioAumento;
       }
+
+       public void imprimirSalario()
+        {
+            Console.WriteLine($"Salario do funcionário {aumentoDeSalario(salario)}");         
+
+
+        }
     }
 }
