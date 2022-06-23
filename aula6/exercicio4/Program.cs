@@ -5,8 +5,12 @@
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("O seu novo salário");
+
+            Random escolheNum = new Random();
+
+            int num = escolheNum.Next();
+
+            Console.WriteLine($"A escolha do computador foi:{num}");
 
 
         }
