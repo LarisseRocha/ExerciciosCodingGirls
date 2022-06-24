@@ -74,7 +74,8 @@ namespace Empregado
 
        public void imprimirSalario()
         {
-            Console.WriteLine($"Salario do funcionário {aumentoDeSalario(salario)}");         
+            Console.WriteLine($"Salario do funcionário com aumento:" +
+                $" {aumentoDeSalario(salario)}");         
 
 
         }
