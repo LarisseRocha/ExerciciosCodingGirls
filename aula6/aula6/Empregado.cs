@@ -43,7 +43,7 @@ namespace Empregado
                 salarioAumento = (salario * 0.15) + salario;
             }
 
-            else if(salario >=400.01 && salario <800.00)
+            else if(salario >=400.01 && salario < 800.00)
             {
 
                 salarioAumento = (salario * 0.12) + salario;
