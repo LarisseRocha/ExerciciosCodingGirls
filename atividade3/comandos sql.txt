@@ -1,0 +1,83 @@
+use blue_ed_techaualas;
+
+drop table empresa; 
+
+drop table pessoa; 
+
+CREATE TABLE Pessoa(
+	Id INT IDENTITY(1,1) PRIMARY KEY,
+	Nome VARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE Emprego(
+	Id INT IDENTITY(1,1) PRIMARY KEY,
+	Nome_Empresa VARCHAR(50) NOT NULL,
+	Cargo VARCHAR(50) NOT NULL,
+	Pessoa_Id INT FOREIGN KEY REFERENCES Pessoa(Id),
+);
+
+
+
+INSERT INTO Pessoa (Nome) VALUES ('LARISSE');
+
+
+INSERT INTO Pessoa (Nome) VALUES ('JOAO'), ('GABI');
+
+INSERT INTO Emprego (Nome_Empresa, Cargo, Pessoa_Id) VALUES ('Blue edtech', 'Professor', 1);
+
+SELECT * FROM Pessoa;
+
+SELECT 'O nome da pessoa e:' + nome FROM Pessoa;
+
+SELECT * FROM Pessoa WHERE Id=1 OR ID=2;
+
+--COMECA COM LAR
+SELECT * FROM Pessoa WHERE Nome LIKE 'Lar%';
+
+
+--TERMINA COM LAR
+SELECT * FROM Pessoa WHERE Nome LIKE '%Lar';
+
+--PODE ESTAR EM QUALQUER PARTE DO TEXTO
+SELECT * FROM Pessoa WHERE Nome LIKE '%Lar%';
+
+--CONDICAO
+SELECT * FROM Pessoa WHERE Nome LIKE '%Lar%' AND Id=1;
+
+
+SELECT * FROM Pessoa WHERE Id BETWEEN 1 AND 3;
+
+SELECT * FROM Pessoa WHERE Nome LIKE '%Lar%';
+
+--NEGACAO DO LIKE
+SELECT * FROM Pessoa WHERE Nome NOT LIKE '%Lar%';
+
+SELECT * FROM Pessoa ORDER BY Nome ASC;
+
+SELECT * FROM Pessoa ORDER BY Nome DESC;
+
+SELECT * FROM Pessoa WHERE ID > 1 ORDER BY NOME DESC;
+
+--FUNÇÕES DE AGREGAÇÃO
+
+SELECT COUNT(*) FROM Pessoa ;
+
+SELECT SUM(ID) FROM Pessoa;
+
+--ATUALIZAÇÃO
+
+UPDATE PESSOA SET Nome='Gabriel' WHERE ID=2;
+
+SELECT * FROM Emprego
+UPDATE Emprego SET Nome_Empresa = 'Bluedtech', Cargo='Professora', Pessoa_Id=2 WHERE ID = 1;
+
+SELECT * FROM Pessoa;
+
+DELETE FROM PESSOA WHERE ID=3;
+
+
+Etapas da criação da API
+
+
+
+
