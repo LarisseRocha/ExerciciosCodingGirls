@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace exercicio3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              Animal animal = new Animal();
+              
+            
+        }
+    }
+}

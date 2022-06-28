@@ -8,6 +8,11 @@ namespace Agenda.Context
         public AgendaContext(DbContextOptions<AgendaContext> options) : base(options)
         { }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Contato>().ToTable("contato");
+        }
+
         public DbSet<Contato> Contatos { get; set; }
     }
     

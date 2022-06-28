@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laris\\OneDrive\\Área de Trabalho\\Curso blurdi\\aula8\\exercicio1\\exercicio1.csproj",
-      "projectName": "exercicio1",
-      "projectPath": "C:\\Users\\Laris\\OneDrive\\Área de Trabalho\\Curso blurdi\\aula8\\exercicio1\\exercicio1.csproj",
+      "projectUniqueName": "C:\\Users\\Laris\\OneDrive\\Área de Trabalho\\Curso blurdi\\aula8\\exercicio1\\exercicio3.csproj",
+      "projectName": "exercicio3",
+      "projectPath": "C:\\Users\\Laris\\OneDrive\\Área de Trabalho\\Curso blurdi\\aula8\\exercicio1\\exercicio3.csproj",
       "packagesPath": "C:\\Users\\Laris\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Laris\\OneDrive\\Área de Trabalho\\Curso blurdi\\aula8\\exercicio1\\obj\\",
       "projectStyle": "PackageReference",

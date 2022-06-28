@@ -35,7 +35,7 @@ namespace exercicio3
             get { return nomeCliente; }
 
             set { 
-                  nomeCliente = ""; 
+                  nomeCliente = nomeCliente; 
                 }
         }
 

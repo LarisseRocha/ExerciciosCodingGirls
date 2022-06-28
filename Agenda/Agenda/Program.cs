@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddDbContext<AgendaContext>(opt => opt.UseInMemoryDatabase("Agenda"));
+//builder.Services.AddDbContext<AgendaContext>(opt => opt.UseInMemoryDatabase("Agenda"));
+builder.Services.AddDbContext<AgendaContext>(opt => opt.UseSqlServer(@"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=agenda;User ID=root;Password=123456"));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
