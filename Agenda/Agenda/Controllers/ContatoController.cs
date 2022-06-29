@@ -12,16 +12,16 @@ namespace Agenda.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ContatoesController : ControllerBase
+    public class ContatoController : ControllerBase
     {
         private readonly AgendaContext _context;
 
-        public ContatoesController(AgendaContext context)
+        public ContatoController(AgendaContext context)
         {
             _context = context;
         }
 
-        // GET: api/Contatoes
+        // GET: api/Contato
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Contato>>> GetContatos()
         {
@@ -32,7 +32,7 @@ namespace Agenda.Controllers
             return await _context.Contatos.ToListAsync();
         }
 
-        // GET: api/Contatoes/5
+        // GET: api/Contato/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Contato>> GetContato(int id)
         {
@@ -50,7 +50,7 @@ namespace Agenda.Controllers
             return contato;
         }
 
-        // PUT: api/Contatoes/5
+        // PUT: api/Contato/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutContato(int id, Contato contato)
@@ -81,7 +81,7 @@ namespace Agenda.Controllers
             return NoContent();
         }
 
-        // POST: api/Contatoes
+        // POST: api/Contato
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Contato>> PostContato(Contato contato)
@@ -96,7 +96,7 @@ namespace Agenda.Controllers
             return CreatedAtAction("GetContato", new { id = contato.Id }, contato);
         }
 
-        // DELETE: api/Contatoes/5
+        // DELETE: api/Contato/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteContato(int id)
         {

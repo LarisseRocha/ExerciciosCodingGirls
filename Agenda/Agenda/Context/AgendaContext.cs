@@ -11,9 +11,13 @@ namespace Agenda.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Contato>().ToTable("contato");
+            
+           
         }
 
         public DbSet<Contato> Contatos { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<UF> UF { get; set; }
     }
     
 }

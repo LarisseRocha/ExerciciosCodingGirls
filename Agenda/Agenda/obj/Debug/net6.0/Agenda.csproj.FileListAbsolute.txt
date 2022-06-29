@@ -262,3 +262,5 @@ C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\n
 C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\net6.0\Agenda.pdb
 C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\net6.0\Agenda.genruntimeconfig.cache
 C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\net6.0\ref\Agenda.dll
+C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\net6.0\Agenda.RazorAssemblyInfo.cache
+C:\Users\Laris\OneDrive\Área de Trabalho\Curso blurdi\Agenda\Agenda\obj\Debug\net6.0\Agenda.RazorAssemblyInfo.cs
